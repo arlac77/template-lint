@@ -1,0 +1,7 @@
+jobs:
+  include:
+    - stage: lint 
+      node_js: lts/*
+      skip_cleanup: true
+      script:
+        - npm run lint
